@@ -1,5 +1,6 @@
 import './globals.css'
 import 'animate.css'
+import './styles/mainpage.css';
 import './styles/splash/splash.css'
 import './styles/splash/splashbackground.css'
 import './styles/splash/splashloader.css'

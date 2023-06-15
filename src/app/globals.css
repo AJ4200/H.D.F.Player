@@ -23,8 +23,14 @@ body {
 }
 
 body {
-  background: var(--third-color);
+
   font-family: var(--font-medium);
+  background: var(--third-color) url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
 }
 
 a {
@@ -52,4 +58,10 @@ a {
     font-family: var(--font-small);
     /* Add any other responsive styles here */
   }
+}
+@keyframes animate {
+  from {background-position:0 0;
+  background-color: var(--third-color);}
+  to {background-position: 500px 0;
+    background-color: var(--second-color); }
 }

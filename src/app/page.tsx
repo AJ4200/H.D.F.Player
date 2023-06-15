@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import Splash from './components/splash/Splash';
 import Splashbackground from './components/splash/Splashbackground';
+import Navbar from './components/home/Navbar';
+import Mainpage from './components/home/Mainpage';
+import Footer from './components/home/Footer';
 
 
 export default function Home() {
@@ -17,13 +20,14 @@ export default function Home() {
 
   return (
     <>
-    <Splashbackground/>
       {showSplash ? (
         <Splash title="H.D.F.Player." />
       ) : (
   <>
   <div className='home-container'>
-
+<Navbar/>
+<Mainpage/>
+<Footer/>
     
   </div>
 </>

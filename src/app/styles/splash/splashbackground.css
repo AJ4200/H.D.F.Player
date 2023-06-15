@@ -10,25 +10,23 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background: #000000;
+    background: var(--third-color);
     overflow: hidden;
 }
 
 .splash-background span {
-    width: 13vmin;
-    height: 13vmin;
-    border-radius: 13vmin;
-    backface-visibility: hidden;
+    width: 20vmin;
+    height: 20vmin;
     position: absolute;
     animation: move;
-    animation-duration: 34;
+    animation-duration: 10;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 
 .splash-background span:nth-child(0) {
-    color: #f5cb5cff;
+    color: var(--brand-color);
     top: 50%;
     left: 22%;
     animation-duration: 114s;
@@ -37,7 +35,7 @@
     box-shadow: 26vmin 0 3.4891254504077502vmin currentColor;
 }
 .splash-background span:nth-child(1) {
-    color: orange;
+    color: var(--second-color);
     top: 79%;
     left: 6%;
     animation-duration: 77s;
@@ -46,7 +44,7 @@
     box-shadow: 26vmin 0 3.6119456374384287vmin currentColor;
 }
 .splash-background span:nth-child(2) {
-    color: #cfdbd5cc;
+    color: var(--brand-color);
     top: 25%;
     left: 63%;
     animation-duration: 17s;
@@ -55,7 +53,7 @@
     box-shadow: 26vmin 0 3.8098332576212393vmin currentColor;
 }
 .splash-background span:nth-child(3) {
-    color: #cfdbd5ff;
+    color: var(--second-color);
     top: 82%;
     left: 16%;
     animation-duration: 129s;
