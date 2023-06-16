@@ -6,12 +6,13 @@
 
 .splash-background {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
+    width: 100%;
+    height: 59px;
+    bottom: 0;
     left: 0;
-    background: var(--third-color);
+    background: black;
     overflow: hidden;
+    z-index: -99;
 }
 
 .splash-background span {
@@ -62,7 +63,7 @@
     box-shadow: -26vmin 0 3.892316855313018vmin currentColor;
 }
 .splash-background span:nth-child(4) {
-    color: #FFACAC;
+    color: var(--third-color);
     top: 67%;
     left: 87%;
     animation-duration: 98s;
@@ -71,7 +72,7 @@
     box-shadow: -26vmin 0 3.2725925365560515vmin currentColor;
 }
 .splash-background span:nth-child(5) {
-    color: yellow;
+    color: var(--brand-color);
     top: 82%;
     left: 83%;
     animation-duration: 134s;
@@ -80,7 +81,7 @@
     box-shadow: -26vmin 0 3.603063286563854vmin currentColor;
 }
 .splash-background span:nth-child(6) {
-    color: #e9b830;
+    color: var(--second-color);
     top: 96%;
     left: 37%;
     animation-duration: 101s;
@@ -89,7 +90,7 @@
     box-shadow: -26vmin 0 3.2908828838245183vmin currentColor;
 }
 .splash-background span:nth-child(7) {
-    color: orange;
+    color: var(--third-color);
     top: 94%;
     left: 2%;
     animation-duration: 115s;
@@ -98,7 +99,7 @@
     box-shadow: -26vmin 0 3.85322434479131vmin currentColor;
 }
 .splash-background span:nth-child(8) {
-    color: #cfdbd5ff;
+    color: var(--brand-color);
     top: 8%;
     left: 82%;
     animation-duration: 53s;

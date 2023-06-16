@@ -1,0 +1,44 @@
+.navbar {
+    /* Theme colors */
+    background-color: black;
+    border-bottom: 1px solid var(--second-color);
+    color: #fff;
+  
+    /* Positioning and layout */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+    /* Spacing and alignment */
+    padding: 10px 20px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+  
+  .nav-item a:hover {
+    border-top: 1px double var(--second-color);
+    color: var(--second-color);
+  }
+  
+  

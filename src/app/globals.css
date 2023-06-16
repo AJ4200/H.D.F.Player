@@ -1,13 +1,13 @@
 :root {
   /* Brand fonts */
-  --font-large: 'Revalia', cursive;
-  --font-medium: 'Wallpoet', cursive;
-  --font-small: 'Gleegoo', cursive;
+  --font-large: 'Press Start 2P', cursive;
+  --font-medium: 'Press Start 2P', cursive;
+  --font-small: 'Press Start 2P', cursive;
 
   /* Brand colors */
-  --brand-color: #07004dff;
-  --second-color: #2d82b7ff;
-  --third-color: #42e2b8ff;
+  --brand-color: rgb(183, 0, 255);
+  --second-color: #ff00ff;
+  --third-color: #ff80c0; 
 }
 
 * {
@@ -23,14 +23,10 @@ body {
 }
 
 body {
-
   font-family: var(--font-medium);
-  background: var(--third-color) url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-  -webkit-animation: 10s linear 0s normal none infinite animate;
-  -moz-animation: 10s linear 0s normal none infinite animate;
-  -ms-animation: 10s linear 0s normal none infinite animate;
-  -o-animation: 10s linear 0s normal none infinite animate;
-  animation: 10s linear 0s normal none infinite animate;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
 }
 
 a {
@@ -58,10 +54,4 @@ a {
     font-family: var(--font-small);
     /* Add any other responsive styles here */
   }
-}
-@keyframes animate {
-  from {background-position:0 0;
-  background-color: var(--third-color);}
-  to {background-position: 500px 0;
-    background-color: var(--second-color); }
 }

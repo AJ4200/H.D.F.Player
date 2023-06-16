@@ -1,0 +1,72 @@
+
+
+.download-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .download-button a {
+    display: block;
+    height: 50px;
+    width: 200px;
+    background: #00b7ea;
+    color: white;
+    font: 17px/50px Helvetica, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    background: var(--second-color)
+  
+  }
+  
+  p {
+    background: #000000;
+    display: block;
+    height: 40px;
+    width: 180px; 
+    margin: -50px 0 0 10px;
+    text-align: center;
+    font: 12px/45px Helvetica, Verdana, sans-serif;
+    color: #fff;
+    position: absolute;
+    z-index: -1;
+    border-radius: 4px;
+border:2px double var(--second-color);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+  }
+  
+  .download-button a, p {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);      
+  }
+  
+  .download-button:hover .top {
+    margin: -80px 0 0 10px;
+    line-height: 35px;
+  }
+   
+  .download-button:hover .bottom {
+    margin: -10px 0 0 10px;
+  }
+  
+  /*Adjust Gradient*/
+  .download-button a:active {
+    transform: scale(0.8);
+    background: black; 
+    border:2px solid var(--second-color);/* Old browsers */
+  
+  }
+   
+  /*Pulls in Wings*/
+  .download-button:active .bottom {
+    margin: -20px 0 0 10px;
+  }
+   
+  .download-button:active .top {
+    margin: -70px 0 0 10px;
+  }

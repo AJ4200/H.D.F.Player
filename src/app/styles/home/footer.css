@@ -1,0 +1,27 @@
+@import "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 60px; /* bottom has to be the same as footer height */
+}
+
+
+footer {
+    /* Theme colors */
+    background-color: black;
+    border-top: 1px solid var(--second-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  
+    /* Positioning */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+  }
+  
