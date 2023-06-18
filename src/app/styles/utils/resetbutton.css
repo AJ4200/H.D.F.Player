@@ -1,0 +1,51 @@
+.reset-button {
+  bottom: 10rem;
+  right: 4rem;
+  width: 10em;
+  position: fixed;
+  height: 3.5em;
+  border: 4px ridge var(--third-color);
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999;
+  text-shadow: 2px 2px #ff00ff;
+  font-family: "Press Start 2P", cursive;
+}
+
+.reset-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #000000;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.reset-button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.reset-button:hover::before,
+.reset-button:hover::after {
+  transform: scale(0);
+}
+
+.reset-button:hover {
+  box-shadow: inset 0px 0px 25px var(--second-color);
+}

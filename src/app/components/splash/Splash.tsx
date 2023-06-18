@@ -12,7 +12,7 @@ const Splash: React.FC<SplashProps> = ({ title }) => {
     <>
       <div className="typewriter-container">
         <div className="typewriter">
-          <h1>{title}</h1>
+          <h1 className="glitch" data-text={title}>{title}</h1>
         </div>
       </div>
                

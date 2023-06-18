@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Minecraftia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=04b03&display=swap');
+
 :root {
   /* Brand fonts */
-  --font-large: 'Press Start 2P', cursive;
-  --font-medium: 'Press Start 2P', cursive;
-  --font-small: 'Press Start 2P', cursive;
+  --font-large: 'Pixelade', cursive;
+  --font-medium: 'Minecraftia', cursive;
+  --font-small: '04b03', cursive;
 
   /* Brand colors */
   --brand-color: rgb(183, 0, 255);

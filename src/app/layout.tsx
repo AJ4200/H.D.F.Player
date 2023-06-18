@@ -4,6 +4,9 @@ import './styles/home/mainpage.css';
 import './styles/home/navbar.css'
 import './styles/home/footer.css';
 import './styles/game/gameutils.css'
+import './styles/utils/resetbutton.css'
+import './styles/utils/chucknorrisjoke.css'
+import './styles/utils/shapes.css'
 import './styles/game/flash.css'
 import './styles/splash/splash.css'
 import './styles/splash/splashbackground.css'

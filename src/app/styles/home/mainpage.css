@@ -9,13 +9,15 @@
   border: 1px solid magenta;
   border-radius: 4px;
   padding: 3px;
+
 }
 
 .tab-buttons button {
+  font-family: "Press Start 2P", cursive;
   border: 1px solid magenta;
   padding: 10px 20px;
   margin-right: 5px;
-  font-size: 16px;
+  font-size: 13px;
   background-color: black;
   color: #fff;
   border-radius: 4px;
@@ -35,8 +37,11 @@
 }
 
 .tab-content {
+
   padding: 1rem 20px;
+  padding-top: 3rem;
   background-color: var(--third-color);
   color: #fff;
   border-radius: 4px;
+
 }

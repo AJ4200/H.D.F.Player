@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Splash from "./components/splash/Splash";
-import Splashbackground from "./components/splash/Splashbackground";
 import Navbar from "./components/home/Navbar";
 import Mainpage from "./components/home/Mainpage";
 import Footer from "./components/home/Footer";
@@ -14,8 +13,8 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
-      setShowLoader(true);
-    }, 5000);
+      setShowLoader(false);
+    }, 7000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -23,7 +22,7 @@ export default function Home() {
     const timer = setTimeout(() => {
     
       setShowLoader(false);
-    }, 10000); 
+    }, 4000); 
     return () => clearTimeout(timer);
   }, []);
 
