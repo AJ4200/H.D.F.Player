@@ -5,7 +5,6 @@ const Navbar: React.FC = () =>
 {
 return (<header>
   <h1>H.D.F.Player.</h1>
-  <Shapes/>
     <nav className="navbar">
 <ul className="nav-list">
   <li className="nav-item"><a href="#">Home</a></li>

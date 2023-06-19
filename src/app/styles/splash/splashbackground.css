@@ -81,7 +81,7 @@
     box-shadow: -26vmin 0 3.603063286563854vmin currentColor;
 }
 .splash-background span:nth-child(6) {
-    color: var(--second-color);
+    color:lime;
     top: 96%;
     left: 37%;
     animation-duration: 101s;
@@ -90,7 +90,7 @@
     box-shadow: -26vmin 0 3.2908828838245183vmin currentColor;
 }
 .splash-background span:nth-child(7) {
-    color: var(--third-color);
+    color: lime;
     top: 94%;
     left: 2%;
     animation-duration: 115s;
@@ -99,7 +99,7 @@
     box-shadow: -26vmin 0 3.85322434479131vmin currentColor;
 }
 .splash-background span:nth-child(8) {
-    color: var(--brand-color);
+    color: lime;
     top: 8%;
     left: 82%;
     animation-duration: 53s;

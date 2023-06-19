@@ -3,21 +3,22 @@
     background-color: black;
     border-bottom: 1px solid var(--second-color);
     color: #fff;
-  
+
     /* Positioning and layout */
     position: fixed;
-    top: 0;
+    top: 4.05rem;
     left: 0;
     width: 100%;
-  
     /* Spacing and alignment */
     padding: 10px 20px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
   }
-  
+
   .nav-list {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
   
@@ -34,11 +35,14 @@
     text-decoration: none;
     padding: 8px 12px;
     transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    text-shadow: 1px 1px lime;
   }
   
   .nav-item a:hover {
     border-top: 1px double var(--second-color);
     color: var(--second-color);
+    text-shadow: 3px 3px green;
+    text-size-adjust: 13px;
   }
   
   

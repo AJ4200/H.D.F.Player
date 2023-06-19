@@ -8,7 +8,7 @@
     cursor: pointer;
     font-size: 30px;
     margin: 0;
-    padding-bottom: 20px;
+
     text-align: center;
     text-shadow: 2px 2px #ff00ff;
   }
@@ -28,10 +28,10 @@
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
-    text-shadow: 2px 2px #ff00ff;
+    text-shadow: 2px 2px lime;
     border: 2px solid #ff00ff;
     border-radius: 10px;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
         width: 60%;
         
   }

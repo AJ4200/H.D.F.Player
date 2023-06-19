@@ -146,7 +146,7 @@ transform: translate(8px,-8px);
 }
 
 .input__check:checked + .slider {
-  background-color: #17202A;
+  background-color: #000000;
 }
 
 .input__check:checked + .slider:before {

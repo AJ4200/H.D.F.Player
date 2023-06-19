@@ -1,3 +1,8 @@
+.shapes-container {
+    display: flex;
+    height: 30px;
+  }
+
 .square,
 .circle,
 .triangle,
@@ -6,10 +11,10 @@
 .pentagon,
 .hexagon,
 .star {
-  width: 5px;
-  height: 5px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
-  box-shadow: 0 0 5px magenta; /* Drop shadow color */
+  box-shadow: 0 0 20px magenta; /* Drop shadow color */
 }
 
 .square {

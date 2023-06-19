@@ -19,29 +19,40 @@ const Mainpage: React.FC = () => {
     } else if (currentTab === "html5") {
       return <Html5 />;
     }
-    return <Infopage/>;
+    return <Infopage />;
   };
 
   return (
     <>
       <div className="tab-buttons">
+        {" "}
         <button
-          className={currentTab === "flash" ? "active animate__animated animate__tada" : ""}
-          onClick={() => handleTabChange("flash")}
+          className={
+            currentTab === "html5"
+              ? "active animate__animated animate__tada"
+              : ""
+          }
+          onClick={() => handleTabChange("html5")}
         >
-          Flash
-        </button>
+          HTML5
+        </button>{" "}
         <button
-          className={currentTab === "dos" ? "active animate__animated animate__tada" : ""}
+          className={
+            currentTab === "dos" ? "active animate__animated animate__tada" : ""
+          }
           onClick={() => handleTabChange("dos")}
         >
           Dos
         </button>
         <button
-          className={currentTab === "html5" ? "active animate__animated animate__tada" : ""}
-          onClick={() => handleTabChange("html5")}
+          className={
+            currentTab === "flash"
+              ? "active animate__animated animate__tada"
+              : ""
+          }
+          onClick={() => handleTabChange("flash")}
         >
-          HTML5
+          Flash
         </button>
       </div>
       <div className="tab-content">{renderTabContent()}</div>
