@@ -3,6 +3,7 @@ import Flash from "../game/Flash";
 import Dos from "../game/Dos";
 import Html5 from "../game/Html5";
 import Infopage from "./Infopage";
+import MusicPlayer from "../game/utils/Musicplayer";
 
 const Mainpage: React.FC = () => {
   const [currentTab, setCurrentTab] = useState("flash");
@@ -53,8 +54,10 @@ const Mainpage: React.FC = () => {
           onClick={() => handleTabChange("flash")}
         >
           Flash
-        </button>
+        </button> 
+          <MusicPlayer/>
       </div>
+
       <div className="tab-content">{renderTabContent()}</div>
     </>
   );
