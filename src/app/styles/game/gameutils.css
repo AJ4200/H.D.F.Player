@@ -1,9 +1,10 @@
 
 
 .download-button {
+  z-index: 999;
     position: absolute;
-    top: 65%;
-    left: 15%;
+    top: 49%;
+    left: 88.8%;
     transform: translate(-50%, -50%);
     font-family: "Press Start 2P", cursive;
   }
@@ -166,4 +167,5 @@ transform: translate(8px,-8px);
 .tooltip-text
 {
   animation: pulse 3s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  z-index: 999;
 }
