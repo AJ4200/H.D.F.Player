@@ -4,47 +4,68 @@ import Downloadbutton from "./utils/Downloadbutton";
 import RouletteMode from "./utils/Roulettemode";
 import Resetbutton from "./utils/Resetbutton";
 import Search from "./utils/Search";
+import Tooltip from "./utils/Tooltip";
 
 const Flash: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState("");
   const [showlist, setShowlist] = useState(true);
+  const [showlistcont, setShowlistcont] = useState(true);
   const [showSearch, setShowSearch] = useState(true);
+  const [showHeading, setShowHeading] = useState(true);
 
   const handleGameSelection = (game: string) => {
     setSelectedGame(game);
     setShowlist(false);
+    setShowlistcont(false);
     setShowSearch(false);
+    setShowHeading(false);
   };
+
   const handlelist = () => {
     setShowlist(true);
+    setShowlistcont(true);
     setSelectedGame("");
   };
 
   return (
     <div className="container">
-      <h2 className="glitch" text-data="Flash Games">
-        Flash Games
-      </h2>
-      {showSearch ? <RouletteMode /> : null}
-      <Search />
-      <ul className="game-list">
-        {showlist &&
-          gameList.map((game, index) => (
-            <li
-              key={index}
-              className="game-item"
-              onClick={() => handleGameSelection(game)}
-            >
-              {game}
-            </li>
-          ))}
-      </ul>
+      {showHeading ? (
+        <h2 className="glitch" text-data="Flash Games">
+          Flash Games
+        </h2>
+      ) : null}
+
+      {showSearch ? (
+        <>
+          <RouletteMode />
+          <Search />
+        </>
+      ) : null}
+
+      {showlistcont ? (
+        <div className="list-container">
+          <ul className="game-list">
+            {showlist &&
+              gameList.map((game, index) => (
+                <li
+                  key={index}
+                  className="game-item"
+                  onClick={() => handleGameSelection(game)}
+                >
+                  {game}
+                </li>
+              ))}
+          </ul>
+        </div>
+      ) : null}
 
       {selectedGame && (
         <div className="game-container">
           <center>
-            <p className="download">right click to go to fullscreen.</p>
-            <embed src={`/games/flash/${selectedGame}`}></embed>
+            <Tooltip text="Right click for fullscreen">
+              <h1>{selectedGame}</h1>
+              <embed src={`/games/flash/${selectedGame}`}></embed>
+            </Tooltip>
             <Downloadbutton
               filelink={`/games/flash/${selectedGame}`}
               filename={`${selectedGame}`}
@@ -56,4 +77,5 @@ const Flash: React.FC = () => {
     </div>
   );
 };
+
 export default Flash;

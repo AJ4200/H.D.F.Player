@@ -5,7 +5,7 @@ import Html5 from "../game/Html5";
 import Infopage from "./Infopage";
 
 const Mainpage: React.FC = () => {
-  const [currentTab, setCurrentTab] = useState("");
+  const [currentTab, setCurrentTab] = useState("flash");
 
   const handleTabChange = (tab: string) => {
     setCurrentTab(tab);
