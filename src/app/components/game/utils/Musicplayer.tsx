@@ -20,7 +20,7 @@ const MusicPlayer: React.FC = () => {
   return (
     <div>
       <audio ref={audioRef} src="/stranger-things-124008.mp3" />
-      <button onClick={toggleMute}>
+      <button className="mute" onClick={toggleMute}>
         {isMuted ? "🔊" : "🔇"}
       </button>
     </div>
