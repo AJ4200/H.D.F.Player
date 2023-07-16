@@ -25,12 +25,14 @@ const Flash: React.FC = () => {
     setShowlist(true);
     setShowlistcont(true);
     setSelectedGame("");
+    setShowSearch(true);
+    setShowHeading(true);
   };
 
   return (
     <div className="container">
       {showHeading ? (
-        <h2 className="glitch" text-data="Flash Games">
+        <h2>
           Flash Games
         </h2>
       ) : null}

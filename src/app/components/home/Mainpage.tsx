@@ -54,8 +54,8 @@ const Mainpage: React.FC = () => {
           onClick={() => handleTabChange("flash")}
         >
           Flash
-        </button> 
-          <MusicPlayer/>
+        </button>
+        <MusicPlayer />
       </div>
 
       <div className="tab-content">{renderTabContent()}</div>

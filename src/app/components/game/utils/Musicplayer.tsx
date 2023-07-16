@@ -1,30 +1,37 @@
 import React, { useState } from "react";
-
-const MusicPlayer: React.FC = () => {
+import AudioPlayer from "react-h5-audio-player";
+ const MusicPlayer: React.FC = () => {
   const [isMuted, setIsMuted] = useState(false);
-  const audioRef = React.useRef<HTMLAudioElement>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const toggleMute = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !audioRef.current.muted;
-      setIsMuted(audioRef.current.muted);
-    }
+   const toggleMute = () => {
+    setIsMuted(!isMuted);
   };
-
-  React.useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.volume = 0.5; // Set the volume to 0.5 (50%)
-    }
-  }, []);
-
-  return (
-    <div>
-      <audio ref={audioRef} src="/stranger-things-124008.mp3" />
+   return (
+    <>
       <button className="mute" onClick={toggleMute}>
-        {isMuted ? "🔊" : "🔇"}
+        {isMuted ? "🔇" : "🔊"}
       </button>
-    </div>
+      <AudioPlayer
+        autoPlay={true}
+        loop
+        preload="auto"
+        src="/stranger-things-124008.mp3"
+        onPlay={(e) => console.log("playing bgm!")}
+        showFilledVolume={true}
+        showDownloadProgress={true}
+        showJumpControls={true}
+        showSkipControls={true}
+        showFilledProgress={true}
+        volume={0.20}
+        // style={{
+        //   visibility: "hidden",
+        //   pointerEvents: "none",
+        //   position: "absolute",
+        //   opacity: 0,
+        // }}
+      />
+    </>
   );
 };
-
-export default MusicPlayer;
+ export default MusicPlayer;
