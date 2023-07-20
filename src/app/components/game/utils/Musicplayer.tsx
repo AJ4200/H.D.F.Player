@@ -18,7 +18,7 @@ const MusicPlayer: React.FC = () => {
       >
         🎶
       </button>
-      {showMusic ? (
+      
         <AudioPlayer
         layout="stacked-reverse"
           autoPlay={true}
@@ -31,10 +31,9 @@ const MusicPlayer: React.FC = () => {
           showJumpControls={true}
           showSkipControls={true}
           showFilledProgress={true}
-          muted
           volume={0.20}
-          className={`animate__animated ${
-            showMusic ? "animate__backInLeft" : "animate__backOutRight"
+          className={`animate__animated  ${
+            showMusic ? "animate__backInLeft" : "animate__backOutLeft hidden"
           }`}
           style={{
             background: "transparent",
@@ -54,7 +53,7 @@ const MusicPlayer: React.FC = () => {
           customVolumeControls={[]}
       
         />
-      ) : null}
+    
     </>
   );
 };

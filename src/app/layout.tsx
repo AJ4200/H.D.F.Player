@@ -13,6 +13,7 @@ import './styles/game/flash.css'
 import './styles/splash/splash.css'
 import './styles/splash/splashbackground.css'
 import './styles/splash/splashloader.css'
+import './styles/utils/music.css'
 
 import { Inter } from 'next/font/google'
 
