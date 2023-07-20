@@ -1,5 +1,6 @@
 import './globals.css'
 import 'animate.css'
+import 'react-h5-audio-player/lib/styles.css';
 import './styles/home/mainpage.css';
 import './styles/home/navbar.css'
 import './styles/home/footer.css';

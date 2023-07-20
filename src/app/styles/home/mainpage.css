@@ -11,7 +11,7 @@
   border-bottom-left-radius: 0;
   padding: 5px;
   top: 4.5rem;
-
+  transition: bounce all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .tab-buttons button {
@@ -28,7 +28,7 @@
   z-index: 999;
   transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
-.tab-buttons div .mute {
+.tab-buttons div .music {
   border-radius: 50%;
   
 }
