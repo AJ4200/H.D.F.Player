@@ -32,7 +32,7 @@ const MusicPlayer: React.FC = () => {
           showSkipControls={true}
           showFilledProgress={true}
           muted
-          volume={0.2}
+          volume={0.20}
           className={`animate__animated ${
             showMusic ? "animate__backInLeft" : "animate__backOutRight"
           }`}
