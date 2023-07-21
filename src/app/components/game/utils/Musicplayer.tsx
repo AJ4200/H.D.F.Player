@@ -20,6 +20,7 @@ const MusicPlayer: React.FC = () => {
       </button>
       
         <AudioPlayer
+        
         layout="stacked-reverse"
           autoPlay={true}
           loop
@@ -31,7 +32,7 @@ const MusicPlayer: React.FC = () => {
           showJumpControls={true}
           showSkipControls={true}
           showFilledProgress={true}
-          volume={0.20}
+          volume={1}
           className={`animate__animated  ${
             showMusic ? "animate__backInLeft" : "animate__backOutLeft hidden"
           }`}
