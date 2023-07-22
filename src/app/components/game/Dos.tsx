@@ -5,6 +5,7 @@ import RouletteMode from "./utils/Roulettemode";
 import Resetbutton from "./utils/Resetbutton";
 import Search from "./utils/Search";
 import Tooltip from "./utils/Tooltip";
+import DosPlayer from "./Dos/DosPlayer";
 
 const Dos: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState("");
@@ -31,11 +32,7 @@ const Dos: React.FC = () => {
 
   return (
     <div className="container">
-      {showHeading ? (
-        <h2>
-          Dos Games
-        </h2>
-      ) : null}
+      {showHeading ? <h2>Dos Games</h2> : null}
 
       {showSearch ? (
         <>
@@ -66,7 +63,9 @@ const Dos: React.FC = () => {
           <center>
             <Tooltip text="Right click for fullscreen">
               <h1>{selectedGame}</h1>
-              <embed src={`/games/dos/${selectedGame}`}></embed>
+              <div style={{ width: "640px", height: "400px" }}>
+                <DosPlayer bundleUrl={`/games/dos/${selectedGame}`} />
+              </div>
             </Tooltip>
             <Downloadbutton
               filelink={`/games/dos/${selectedGame}`}
