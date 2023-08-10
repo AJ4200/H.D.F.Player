@@ -58,7 +58,7 @@
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
-    text-shadow: 2px 2px lime;
+    text-shadow: 2px 2px #00ff00;
     border: 2px solid #ff00ff;
     border-radius: 10px;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);

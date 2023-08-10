@@ -1,0 +1,15 @@
+.Hero {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  border: none;
+  list-style: none;
+
+}
+.Hero li {
+    font-size: 0.8rem;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 2px 2px #ff00ff;
+  color: aliceblue;
+  padding: 0.2rem;
+}

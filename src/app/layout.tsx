@@ -9,6 +9,8 @@ import "./styles/utils/resetbutton.css";
 import "./styles/utils/chucknorrisjoke.css";
 import "./styles/utils/shapes.css";
 import "./styles/utils/search.css";
+import "./styles/utils/tooltip.css";
+import "./styles/utils/hero.css";
 import "./styles/game/flash.css";
 import "./styles/splash/splash.css";
 import "./styles/splash/splashbackground.css";

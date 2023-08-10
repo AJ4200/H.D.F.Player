@@ -5,6 +5,7 @@ import Navbar from "./components/home/Navbar";
 import Mainpage from "./components/home/Mainpage";
 import Footer from "./components/home/Footer";
 import Splashloader from "./components/splash/Splashloader";
+import Hero from "./components/home/Hero";
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -14,22 +15,24 @@ export default function Home() {
     const timer = setTimeout(() => {
       setShowSplash(false);
       setShowLoader(false);
-    }, 7000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-    
       setShowLoader(false);
-    }, 4000); 
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       {showSplash ? (
-        <Splash title="Beta" />
+        <>
+          <Hero prop={""} />
+          <Splash title="Alpha" />
+        </>
       ) : (
         <>
           {showLoader ? (
