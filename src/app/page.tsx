@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Splash from "./components/splash/Splash";
+import Splash from "./components/home/splash/Splash";
 import Navbar from "./components/home/Navbar";
 import Mainpage from "./components/home/Mainpage";
 import Footer from "./components/home/Footer";
-import Splashloader from "./components/splash/Splashloader";
+import Splashloader from "./components/home/splash/Splashloader";
 import Hero from "./components/home/Hero";
 
 export default function Home() {

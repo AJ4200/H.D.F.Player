@@ -1,5 +1,111 @@
-.hidden{
-       visibility: hidden;
-       position: absolute;
-       opacity: 0;
-     }
+/* MP3Player.css */
+.mp3close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 2% 4%;
+  font-size: 1.4vw;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mp3close:hover {
+  background-color: #aaa;
+}
+.mp3-player {
+  position: fixed;
+  bottom: 5%;
+  right: 20%;
+  background-color: #000;
+  padding: 4%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  width: 40%;
+  height: 70%;
+  z-index: 99999;
+}
+.album-art {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Game_Boy_Pocket_Console.jpg/1200px-Game_Boy_Pocket_Console.jpg");
+}
+.pauseplay,
+.stop,
+.previous,
+.next,
+.shuffle,
+.repeat {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 2% 3%;
+  font-size: 1.4vw;
+  border-radius: 5px;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.pauseplay:hover,
+.stop:hover,
+.previous:hover,
+.next:hover,
+.shuffle:hover,
+.repeat:hover {
+  background-color: #aaa;
+}
+.volume,
+.seek {
+  width: 100%;
+  margin-bottom: 2%;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background-color: #555;
+  border-radius: 5px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #aaa;
+}
+h3 {
+  font-size: 1.6vw;
+  margin-bottom: 2%;
+}
+
+.mp3-player {
+  background-image: linear-gradient(to bottom, #000, #555);
+}
+
+.pauseplay,
+.stop,
+.previous,
+.next,
+.shuffle,
+.repeat {
+  background-color: #aaa;
+}
+
+.pauseplay:hover,
+.stop:hover,
+.previous:hover,
+.next:hover,
+.shuffle:hover,
+.repeat:hover {
+  background-color: #000;
+}
