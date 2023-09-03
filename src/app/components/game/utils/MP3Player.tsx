@@ -8,10 +8,12 @@ import {
   FaRandom,
   FaRedo,
 } from "react-icons/fa";
+import AlbumArt from "./AlbumArt";
 
 const MP3Player: React.FC = () => {
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showArt, setShowArt] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(50);
@@ -97,52 +99,79 @@ const MP3Player: React.FC = () => {
       {isPlayerOpen ? (
         <button>open</button>
       ) : (
-        <div className="mp3-player">
+        <div
+          className="mp3-player"
+          onMouseEnter={() => {
+            setShowArt(!showArt);
+          }}
+        >
           <button className="mp3close" onClick={() => setIsPlayerOpen(false)}>
-            x
+            ✖️
           </button>
-          <h3>{currentSong}</h3>
-          <img
-            src={getAlbumArt(currentSong)}
-            alt="Album Art"
-            className="album-art"
-          />
-          <button className="pauseplay" onClick={togglePlay}>
-            {isPlaying ? <FaPause /> : <FaPlay />}
-          </button>
-          <button className="stop" onClick={stop}>
-            <FaStop />
-          </button>
-          <input
+
+          <div className="controls-container">
+            <img
+              src={getAlbumArt(currentSong)}
+              alt=""
+              style={{
+                border: "1px solid magenta",
+                width: "2rem",
+                borderRadius: "50%",
+              }}
+            ></img>
+            <button className="pauseplay" onClick={togglePlay}>
+              {isPlaying ? <FaPause /> : <FaPlay />}
+            </button>
+            <button className="stop" onClick={stop}>
+              <FaStop />
+            </button>
+            {/* <input
             className="volume"
             type="range"
             min={0}
             max={100}
             value={volume}
             onChange={handleVolumeChange}
-          />
-          <button className="previous" onClick={handlePrevious}>
-            <FaStepBackward />
-          </button>
-          <button className="next" onClick={handleNext}>
-            <FaStepForward />
-          </button>
-          <button className="shuffle" onClick={handleShuffle}>
-            {shuffle ? "Shuffle On" : "Shuffle Off"} <FaRandom />
-          </button>
-          <button className="repeat" onClick={handleRepeat}>
-            {repeat ? "Repeat On" : "Repeat Off"} <FaRedo />
-          </button>
-          <input
+          /> */}
+            <button className="previous" onClick={handlePrevious}>
+              <FaStepBackward />
+            </button>
+            <button className="next" onClick={handleNext}>
+              <FaStepForward />
+            </button>
+            <button
+              className="shuffle"
+              onClick={handleShuffle}
+              style={{
+                backgroundColor: ` ${shuffle ? "lime" : ""}`,
+              }}
+            >
+              <FaRandom />
+            </button>
+            <button
+              className="repeat"
+              onClick={handleRepeat}
+              style={{
+                backgroundColor: ` ${repeat ? "lime" : ""}`,
+              }}
+            >
+              <FaRedo />
+            </button>
+            {/* <input
             className="seek"
             type="range"
             min={0}
             max={duration}
             value={currentTime}
             onChange={handleSeek}
-          />
+          /> */}
+          </div>
+
           <audio ref={audioRef} src={currentSong} />
         </div>
+      )}
+      {showArt && (
+        <AlbumArt img_src={getAlbumArt(currentSong)} song={currentSong} />
       )}
     </>
   );

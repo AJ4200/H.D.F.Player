@@ -6,6 +6,7 @@ import Mainpage from "./components/home/Mainpage";
 import Footer from "./components/home/Footer";
 import Splashloader from "./components/home/splash/Splashloader";
 import Hero from "./components/home/Hero";
+import MP3Player from "./components/game/utils/MP3Player";
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -46,6 +47,7 @@ export default function Home() {
           )}
         </>
       )}
+      <MP3Player/>
     </>
   );
 }

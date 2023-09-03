@@ -1,39 +1,59 @@
 /* MP3Player.css */
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .mp3close {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
-  border: none;
-  padding: 2% 4%;
-  font-size: 1.4vw;
-  border-radius: 5px;
+  border-left: 2px solid lime;
+  border-right: 2px solid magenta;
+  font-size: 1rem;
+  border-radius: 50%;
   cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .mp3close:hover {
-  background-color: #aaa;
+  transform: rotate(360deg);
+  background-color: rgba(0, 255, 0, 0.205);
 }
 .mp3-player {
   position: fixed;
-  bottom: 5%;
-  right: 20%;
-  background-color: #000;
-  padding: 4%;
+  align-items: center;
+  justify-items: center;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  bottom: 6rem;
+  right: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   color: #fff;
   font-family: Arial, sans-serif;
-  width: 40%;
-  height: 70%;
+  height: 50%;
   z-index: 99999;
+  width: 2.5rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 0, 255, 0.11);
+}
+.Art-Container {
+  position: fixed;
+  align-items: center;
+  justify-items: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 0, 255, 0.11);
+  height: 50%;
 }
 .album-art {
   width: 30%;
   height: 30%;
   margin-bottom: 4%;
   border-radius: 10px;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Game_Boy_Pocket_Console.jpg/1200px-Game_Boy_Pocket_Console.jpg");
 }
 .pauseplay,
 .stop,
@@ -41,14 +61,14 @@
 .next,
 .shuffle,
 .repeat {
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
-  border: none;
-  padding: 2% 3%;
-  font-size: 1.4vw;
-  border-radius: 5px;
-  margin-right: 2%;
+  border: 1px solid magenta;
+  border-radius: 50%;
   cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .pauseplay:hover,
 .stop:hover,
@@ -56,7 +76,8 @@
 .next:hover,
 .shuffle:hover,
 .repeat:hover {
-  background-color: #aaa;
+  background-color: rgba(255, 0, 255, 0.603);
+  transform: scale(0.8);
 }
 .volume,
 .seek {
@@ -86,26 +107,4 @@ input[type="range"]::-webkit-slider-thumb:hover {
 h3 {
   font-size: 1.6vw;
   margin-bottom: 2%;
-}
-
-.mp3-player {
-  background-image: linear-gradient(to bottom, #000, #555);
-}
-
-.pauseplay,
-.stop,
-.previous,
-.next,
-.shuffle,
-.repeat {
-  background-color: #aaa;
-}
-
-.pauseplay:hover,
-.stop:hover,
-.previous:hover,
-.next:hover,
-.shuffle:hover,
-.repeat:hover {
-  background-color: #000;
 }
